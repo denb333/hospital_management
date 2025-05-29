@@ -1,0 +1,15 @@
+{% extends 'hospital/admin_base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Biểu đồ Chi phí Bệnh viện</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1 style="text-align: center;margin-top: 50px;">Biểu đồ Chi phí Bệnh viện theo ngày xuất viện</h1>
+    {{ chart_div|safe }}
+</body>
+</html>
+{% endblock content %}
